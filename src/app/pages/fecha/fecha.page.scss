@@ -1,0 +1,35 @@
+ion-datetime{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--mi-input-color) ;
+    border-radius: 10px;
+    border: 1px solid var(--mi-text-color);
+    color: var(--mi-icon-color);
+    font-weight: bold;
+}
+
+ion-card{
+
+    background-color: var(--mi-itemlist-bg-color) ;
+}
+h2{
+    color:var(--mi-text-color);
+    font-weight: bold;
+}
+
+
+a.miclass{
+    color:var(--mi-text-color);
+}
+
+p.miclass{
+    color:var(--mi-icon-color);
+ //   font-weight: bold;
+}
+
+ion-item {
+    --ion-item-background: var(--mi-itemlist-bg-color) !important;    
+}

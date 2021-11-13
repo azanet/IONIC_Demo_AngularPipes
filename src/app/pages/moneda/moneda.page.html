@@ -1,0 +1,56 @@
+<app-header title="Pipe Currency" icon="false" backBtn="true"></app-header>
+
+<ion-content mode="md" >
+
+    <app-inputvalue title={{title}} (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+    
+<ion-card>
+<ion-list class="ion-margin-left" style="padding-top: 0px;padding-bottom: 0px;"lines="full">
+    <ion-item  >   
+        <ion-label>
+            <p class="miclass">Pipe 'currency' por default</p>
+            <a class="miclass">currency&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{value | currency}}</a>    
+        </ion-label>  
+    </ion-item>
+    <ion-item>     
+        <ion-label>
+            <p class="miclass">Cant. en € con 'Letras'</p>
+            <a class="miclass">currency:'EUR':'code'&nbsp;&nbsp;&nbsp;= {{value | currency:'EUR':'code'}}</a>    
+        </ion-label>     
+    </ion-item>
+    <ion-item>     
+        <ion-label>
+            <p class="miclass">Cant. en Dólares con 'Símbolo'</p>
+            <a class="miclass">currency:'USD':'symbol'&nbsp;= {{value | currency:'USD':'symbol'}}</a>    
+        </ion-label>     
+        </ion-item>
+    <ion-item>
+        <ion-label>
+            <p class="miclass">Cant. en Dólares con 'Letras'</p>
+            <a class="miclass">currency:'USD':'code' &nbsp;&nbsp;= {{value | currency:'USD':'code'}}</a>    
+        </ion-label>       
+    </ion-item>
+    <ion-item>    
+        <ion-label>
+            <p class="miclass">Cant en Libras con 'Símbolo'</p>
+            <a class="miclass">currency:'GBP':'symbol'&nbsp;= {{value |  currency:'GBP':'symbol'}}</a>    
+        </ion-label>  
+    </ion-item>
+    <ion-item>     
+        <ion-label>
+            <p class="miclass">En Libras 'Símbolo' y Min.2 Max.2 Decimales</p>
+            <a class="miclass">currency:'GBP':'symbol':'0.2-2'&nbsp;= {{value | currency:'GBP':'symbol':'0.2-2' }}</a>    
+        </ion-label>           
+    </ion-item>
+    <ion-item>  
+        <ion-label>
+            <p class="miclass">En Libras Entero Min.4 y Min.0 Max.2 Dec</p>
+            <a class="miclass">curre..··· :'symbol':'4.0-2'&nbsp;= {{value | currency:'GBP':'symbol':'4.0-2' }}</a>    
+        </ion-label>      
+    </ion-item>
+
+</ion-list>
+
+</ion-card>
+
+</ion-content>

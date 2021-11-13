@@ -1,0 +1,63 @@
+<app-header title="Pipe Fechas" icon="false" backBtn="true"  ></app-header>
+
+<ion-content class="ion-text-center">
+ 
+
+<ion-card >
+    <ion-card-content style="padding-top:15px;">
+        <h2 class="ion-text-left">Seleccione Fecha:</h2>
+        <ion-datetime class="miclass" display-timezone="utc" [(ngModel)]="dateValue"></ion-datetime> 
+    </ion-card-content>
+</ion-card>
+
+<ion-item-divider style="margin-top: -10px;padding-top: 0px;"></ion-item-divider>
+
+    <ion-list class="ion-margin-left" style="padding-top: 0px;" lines="full" mode="md">
+        <ion-item  >   
+            <ion-label>
+                <p class="miclass">Pipe 'date' por default</p>
+                <a class="miclass">date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{dateValue | date}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Fecha y Hora</p>
+                <a class="miclass">date:'short' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{dateValue | date:'short'}}</a>    
+            </ion-label>     
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Información de 'Date' completa</p>
+                <a class="miclass">date:'full'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=</a><br/><a class="miclass">{{dateValue | date:'full'}} </a>
+            </ion-label>     
+            </ion-item>
+        <ion-item>
+            <ion-label>
+                <p class="miclass">Fecha con día en 'Letras'</p>
+                <a class="miclass">date:'mediumDate'&nbsp;= {{dateValue | date:'mediumDate'}}</a>    
+            </ion-label>       
+        </ion-item>
+        <ion-item>    
+            <ion-label>
+                <p class="miclass">Fecha con dia y mes en 'Letras'</p>
+                <a class="miclass">date:'fullDate'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=</a><br/><a class="miclass">{{dateValue |  date:'fullDate'}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mostrar Hora, minutos, franja horaria </p>
+                <a class="miclass">date:'shortTime'&nbsp;&nbsp;&nbsp;= {{dateValue | date:'shortTime' }}</a>    
+            </ion-label>           
+        </ion-item>
+        <ion-item>  
+            <ion-label>
+                <p class="miclass">Mostrar Hora, minutos, franja horaria</p>
+                <a class="miclass">date:'fullTime' &nbsp;&nbsp;&nbsp;&nbsp;= {{dateValue | date:'fullTime'}}</a>    
+            </ion-label>      
+        </ion-item>
+    </ion-list>  
+
+
+
+
+</ion-content>

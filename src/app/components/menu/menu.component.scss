@@ -1,0 +1,21 @@
+.my-custom-menu {
+    --width: 500px;
+  }
+
+ion-header{
+    --ion-background-color: rgb(233, 191, 136);
+    --ion-text-color: rgb(73, 53, 27);
+}
+
+ion-content{
+
+  --ion-background-color:rgb(73, 53, 27) ;
+  --ion-text-color: rgb(233, 191, 136);
+  
+}
+
+ion-icon{
+
+    color: var(--mi-input-color);    
+
+}

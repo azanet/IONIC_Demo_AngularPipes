@@ -1,0 +1,19 @@
+h5.miclass{
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--mi-text-color);
+}
+ion-card-content{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: var(--mi-itemlist-bg-color) !important;    
+    border: 1px solid var(--mi-icon-color) !important;
+}
+
+ion-card{
+    border: 1px solid var(--mi-text-color) !important;
+}

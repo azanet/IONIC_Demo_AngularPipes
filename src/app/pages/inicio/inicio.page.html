@@ -1,0 +1,23 @@
+<app-header title="Pipes Demo App" icon="false" backBtn="false"  ></app-header>
+
+<ion-content mode="md" >
+
+  <app-inputvalue (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+  
+<ion-item-divider>
+    <h5 class="ion-text-center miclass"><strong>Pulse Opción a Enviar 'VALUE'</strong></h5>
+</ion-item-divider>
+
+
+
+<ion-list style="padding-top: 0px;">
+    <ion-item lines="full"  *ngFor="let page of misPaginas" 
+        [routerLink]="page.redirectTo" detail>     
+        <ion-icon class="miclass" slot="start" [name]="page.icon" ></ion-icon>
+        {{page.name}}      
+    </ion-item>
+ 
+  
+</ion-list>
+
+</ion-content>

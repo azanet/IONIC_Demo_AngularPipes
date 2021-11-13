@@ -1,0 +1,10 @@
+<ion-card-content class="ion-margin" style="margin-bottom: 0%;">
+  <ion-label><strong>{{title}}</strong></ion-label> 
+  <ion-input class="miclass" type="decimal" (ionChange)="setValue($event)" value={{value}} placeholder="Input value" ></ion-input>
+
+  <div class="ion-text-right">
+  <ion-chip  class="miclass" mode="md" outline="true" (click)="resetValue()">
+      <ion-label>Reset Value</ion-label>
+  </ion-chip>
+  </div>
+</ion-card-content>

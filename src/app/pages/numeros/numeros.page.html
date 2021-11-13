@@ -1,0 +1,53 @@
+<app-header title="Pipe Decimal/Number" icon="false" backBtn="true"  ></app-header>
+
+<ion-content>
+
+    <app-inputvalue title={{title}} (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+    <ion-item-divider style="margin-top: -10px;padding-top: 0px;"></ion-item-divider>
+
+    <ion-list style="padding-top: 0px;" lines="full">
+        <ion-item>   
+            <ion-label>
+                <p class="miclass">Pipe por default</p>
+                <a class="miclass">number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{value | number}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mín. 0 enteros y Decimales Min. 0 - Max.0</p>
+                <a class="miclass">number:'0.0-0'&nbsp;= {{value | number:'0.0-0'}}</a>    
+            </ion-label>     
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mín. 1 enteros y Decimales Min. 0 - Max.0</p>
+                <a class="miclass">number:'1.0-0'&nbsp;= {{value | number:'1.0-0'}}</a>    
+            </ion-label>     
+            </ion-item>
+        <ion-item>
+            <ion-label>
+                <p class="miclass">Mín. 1 enteros y Decimales Min. 0 - Max.2</p>
+                <a class="miclass">number:'1.0-2'&nbsp;= {{value | number:'1.0-2'}}</a>    
+            </ion-label>       
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mín. 1 enteros y Decimales Min.2 - Max.2</p>
+                <a class="miclass">number:'1.2-2'&nbsp;= {{value | number:'1.2-2'}}</a>    
+            </ion-label>           
+        </ion-item>
+        <ion-item>  
+            <ion-label>
+                <p class="miclass">Mín. 3 enteros y Decimales Min.4 - Max.6</p>
+                <a class="miclass">number:'3.4-6'&nbsp;= {{value | number:'3.4-6'}}</a>    
+            </ion-label>      
+        </ion-item>
+        <ion-item>    
+            <ion-label>
+                <p class="miclass">Mín. 6 enteros y Decimales Min.6 - Max.6</p>
+                <a class="miclass">number:'6.6-6'&nbsp;= {{value | number:'6.6-6'}}</a>    
+            </ion-label>  
+        </ion-item>
+    </ion-list>
+
+</ion-content>

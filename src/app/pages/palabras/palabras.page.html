@@ -1,0 +1,59 @@
+<app-header title="Pipe Slice Palabras/Array" icon="false" backBtn="true"  ></app-header>
+
+<ion-content>
+
+    <app-inputvalue title={{title}} (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+
+    <ion-item-divider style="margin-top: -10px;padding-top: 0px;"></ion-item-divider>
+
+    <ion-list class="ion-margi-left" style="padding-top: 0px;" lines="full">
+        <ion-item  >   
+            <ion-label>
+                <p class="miclass">Pipe 'slyce' por default</p>
+                <a class="miclass">slice:0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{value | slice:0}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Cortando 5 primeros caracteres</p>
+                <a class="miclass">slice:5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{value | slice:5}}</a>    
+            </ion-label>     
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Eliminando primeros 5 y a partir del 9 caracter</p>
+                <a class="miclass">slice:5:8 &nbsp;&nbsp;&nbsp;= {{value | slice:5:8}}</a>    
+            </ion-label>     
+            </ion-item>
+        <ion-item>
+            <ion-label>
+                <p class="miclass">Eliminando a partir del 6 caracter</p>
+                <a class="miclass">slice:0:5 &nbsp;&nbsp;&nbsp;= {{value | slice:0:5}}</a>    
+            </ion-label>       
+        </ion-item>
+        <ion-item>    
+            <ion-label>
+                <p class="miclass">Slice con Array, Mostrando desde el 9 elemento</p>
+                <a class="miclass">slice:8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{arrValue |  slice:8}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">con Array, Mostrando entre el 6 y 8 elemento</p>
+                <a class="miclass">slice:5:8&nbsp;&nbsp;&nbsp;&nbsp;= {{arrValue | slice:5:8 }}</a>    
+            </ion-label>           
+        </ion-item>
+        <ion-item>  
+            <ion-label>
+                <p class="miclass">con Array, Mostrando hasta el 5 elemento</p>
+                <a class="miclass"> slice:0:5&nbsp;&nbsp;&nbsp;&nbsp;= {{arrValue | slice:0:5 }}</a>    
+            </ion-label>      
+        </ion-item>
+    
+    </ion-list>
+
+
+
+
+
+</ion-content>

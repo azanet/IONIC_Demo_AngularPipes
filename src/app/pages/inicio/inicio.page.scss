@@ -1,0 +1,19 @@
+
+
+ion-item {
+    --ion-item-background: var(--mi-itemlist-bg-color) !important;    
+}
+
+
+ion-icon.miclass {
+    color: var(--mi-icon-color);    
+}
+
+h5.miclass{
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--mi-text-color);
+}
+

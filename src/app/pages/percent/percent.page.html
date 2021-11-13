@@ -1,0 +1,45 @@
+<app-header title="Pipe Percent" icon="false" backBtn="true"  ></app-header>
+
+<ion-content>
+
+    <app-inputvalue title={{title}} (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+
+    <ion-item-divider style="margin-top: -10px;padding-top: 0px;"></ion-item-divider>
+
+    <ion-list class="ion-margi-left" style="padding-top: 0px;" lines="full">
+        <ion-item  >   
+            <ion-label>
+                <p class="miclass">Pipe 'percent' por default</p>
+                <a class="miclass">percent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {{value | percent}}</a>    
+            </ion-label>  
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mostrando Entero y Max.2 Decimales</p>
+                <a class="miclass">percent:'0.0-2'&nbsp;&nbsp;= {{value | percent:'0.0-2'}}</a>    
+            </ion-label>     
+        </ion-item>
+        <ion-item>     
+            <ion-label>
+                <p class="miclass">Mostrando Min.2 Enteros y Max.2 Decimales</p>
+                <a class="miclass">percent:'2.0-2'&nbsp;&nbsp;= {{value | percent:'2.0-2'}}</a>    
+            </ion-label>     
+            </ion-item>
+        <ion-item>
+            <ion-label>
+                <p class="miclass">Min.2 Enteros y Min.2 Max.2 Decimales</p>
+                <a class="miclass">percent:'2.2-2'&nbsp;&nbsp;= {{value | percent:'2.2-2'}}</a>    
+            </ion-label>       
+        </ion-item>
+        <ion-item>    
+            <ion-label>
+                <p class="miclass">Min.3 Enteros y Min.2 Max.6 Decimales</p>
+                <a class="miclass">percent:'3.2-2'&nbsp;&nbsp;= {{value |  percent:'3.2-6'}}</a>    
+            </ion-label>  
+        </ion-item>
+
+    
+    </ion-list>
+
+
+</ion-content>

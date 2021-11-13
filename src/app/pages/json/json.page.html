@@ -1,0 +1,21 @@
+<app-header title="Pipe JSON" icon="false" backBtn="true"  ></app-header>
+
+<ion-content>
+
+    <app-inputvalue title={{title}} (propagar)="setValue($event)" [value]="value"></app-inputvalue>
+
+    
+    <ion-card style="margin-top: 0px;">
+        
+    
+    <ion-list>
+        <h5 class="ion-text-center miclass">Mostrando JSON, con el VALOR </h5>
+        <ion-card-content>
+            
+            <pre>{{ jsonValue | json }} </pre> 
+
+        </ion-card-content>
+    </ion-list>
+    </ion-card>
+
+</ion-content>

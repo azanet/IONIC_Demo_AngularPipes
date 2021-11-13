@@ -1,0 +1,30 @@
+  
+  <ion-menu side="end" menuId="first" contentId="miMenuID" mode="md">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="ion-text-capitalize"><strong>go to...</strong></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+
+        <ion-list style="padding-top: 0px;">
+    <ion-item lines="full"  *ngFor="let page of misPaginas" [routerLink]="page.redirectTo" detail>     
+        <ion-icon  slot="start" [name]="page.icon" ></ion-icon>
+        {{page.name}}      
+  </ion-item>
+  <ion-item button="true" detail="true" slot="start" detailIcon="exit"  (click)="closeApp()" style="color: red;">Salir</ion-item>
+   
+</ion-list>
+    </ion-content>
+
+
+
+
+
+
+
+  </ion-menu>
+  
+
+
+

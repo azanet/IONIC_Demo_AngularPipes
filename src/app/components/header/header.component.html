@@ -1,0 +1,26 @@
+<ion-header mode="md" >
+  <ion-toolbar >
+ 
+    <ion-buttons slot="start">
+      <ion-menu-button  menu="first"></ion-menu-button>
+    </ion-buttons>
+
+
+    <!--<ion-button class="ion-no-margin ion-no-padding" (click)="onClick()" fill="clear" slot="start">
+      <ion-icon slot="icon-only" size="large" name="exit" class="icon-menu" style="margin-left: 15px;" ></ion-icon>
+    </ion-button>-->
+
+
+  <ion-item class="ion-no-margin ion-no-padding" style=" width:max-content; margin-left: auto; margin-right: auto;position: relative;" lines="none">
+    <ion-icon *ngIf="(icon !== 'false')" style="font-size: 25px; " name={{icon}} ></ion-icon>
+    <ion-title style="margin-left: -15px;" ><strong>{{title}}</strong></ion-title>
+    
+    </ion-item>
+
+    <ion-buttons *ngIf="(backBtn !== 'false')" slot="end" style="margin-left: -45px;" >
+      <ion-back-button defaultHref="/" ></ion-back-button>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+ </ion-header>
